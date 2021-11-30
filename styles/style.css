@@ -54,6 +54,7 @@ header section {
     clear: both;
     background-image: url('../images/landing.jpg');
     background-size: contain;
+    background-position: center;
     height: 70vh; 
     color: #FFF;
     position: relative;
@@ -85,11 +86,15 @@ section h2 {
 
 #spotify {
     display: flex;
-    margin-bottom: 30px;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 30px;    
 }
 
 #spotify div {
-    justify-content: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -99,11 +104,14 @@ section h2 {
 
 #spotify p {
     color: #1A1A1A;   
+    width: 50%;    
 }
 
 #spotify h3 {
     color: #00B172;
 }
+
+/* Iteration 4: The green section */
 
 footer {
     background-color:  #00B172;
@@ -112,6 +120,7 @@ footer {
     margin: 10px;
     padding: 10px;
     position: relative;
+    justify-content:space-between;  
 }
 
 footer h2 {
@@ -124,16 +133,20 @@ footer p, footer h3 {
     margin-bottom: 20px;
 }
 
+footer p {
+    width: 40%;
+}
+
 #footer-info img {
     width: 10%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 50%;
 }
 
-#footer-app img {
-    width: 50%;
-    margin: 30px;
+footer img:nth-child(2) {
+    width: 30%;
+    margin: 30px;   
 }
 
 
